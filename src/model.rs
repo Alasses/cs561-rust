@@ -7,6 +7,17 @@
 use serde::{Serialize, Deserialize};
 
 #[derive(Debug, Serialize, Deserialize)]
+pub struct Auth {
+    pub auth: String,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct Greet {
+    msg: String,
+    secret: i64,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
 pub struct Weather {
     main: Main,
 }
